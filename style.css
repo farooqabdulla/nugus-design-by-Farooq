@@ -1,0 +1,504 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+    /* font-family: futura; */
+    scroll-behavior: smooth;
+}
+
+/*-------------------------------------- First Navbar ------------------------------------------*/
+.firstnav{
+    height: 7.6vh;
+    width: 100%;
+    /* box-shadow: 0 0 0.6px black; */
+    padding: 0 2vw;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+}
+#menu,#menu2{
+    display: none;
+}
+
+#logo{
+    height: 100%;
+    width: 8.5vw;
+    position: relative;
+    top: 4vh;
+}
+.nav1link{
+    width: 34vw;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 100%;
+    margin-left: 3vw;
+    font-weight: 100;
+    
+}
+.nav1link a{
+    text-decoration: none;
+    color: black;
+    font-weight: bolder;
+    font-size: 1vw;
+}
+.nav1link a:hover{
+    color: #0c6dbe;
+}
+.nav1link a:first-child{
+    color: #0c6dbe;
+    border-bottom: 2px solid #0c6dbe;
+    padding: 5px;
+}
+.emailnum{
+    width: 21vw;
+    /* background-color: yellowgreen; */
+    margin-left: 1vw;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.emailnum a{
+    color: #4E4E4E;
+    text-decoration: none;
+    font-size: 0.9vw;
+}
+.emailnum a:hover{
+    color: #4e4e4eab;
+}
+.navbuttons{
+    /* background-color: red; */
+    margin-left: 2vw;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 10vw;
+}
+.navbuttons button{
+    background-color: #33ACE2;
+    border: none;
+    color: white;
+    padding: 3px 5px;
+    font-size: 0.9vw;
+}
+.navbuttons button:hover{
+    background-color: #33abe2a0;
+}
+
+/*-------------------------------------- Second Navbar ------------------------------------------*/
+
+.secondnav{
+    width: 60%;
+    margin: auto;
+    height: 7vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-weight: 100;
+}
+.secondnav a{
+    text-decoration: none;
+    color: black;
+    font-weight: bolder;
+    font-size: 1vw;
+}
+.secondnav a:first-child{
+    color: #0c6dbe;
+    padding: 5px 0;
+    border-bottom: 1px solid #0c6dbe;
+}
+.secondnav a:hover{
+    color: #0c6dbe;
+}
+
+/* ----------------------------------First page------------------------------------------------------- */
+
+
+#page1{
+    min-height: 75vh;
+    /* background-color: red; */
+    position: relative;
+    width: 100%;
+    padding: 0 1vw;
+    padding-top: 15vh;
+}
+#page1 h1{
+    /* font-family: futura; */
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 15vw;
+    letter-spacing: 0px;
+    line-height: 15vw;
+    font-weight: 700;
+}
+#page1 h1 span{
+    color: #0c6dbe;
+}
+.image_container{
+    width: 100%;
+    height: 100vh;
+    position: relative;
+}
+.image_container img{
+    width: 100%;
+    height: 100vh;
+}
+.image_container #spot{
+    padding:40vh 20vh;
+    font-size: 7vw;
+    background-color: rgba(0, 0, 0, 0.694);
+    color: white;
+    position: fixed;
+    border-radius: 50%;
+    opacity: 0;
+    scale: 0;
+    cursor: pointer;
+}
+
+#span1{
+    display: flex;
+    justify-content: space-between;
+}
+.clients{
+    width: 100%;
+    text-align: center;
+    height: 40vh;
+    margin-top: 15vh;
+}
+.clients h1{
+    padding: 10vh 0;
+    font-size: 6vh;
+}
+.clientani{
+    width: 75%;
+    margin: auto;
+    display: flex;
+    justify-content: flex-start;
+    overflow: hidden;
+    background-color: rgba(239, 234, 234, 0.066);
+    border-radius: 20px;
+}
+.clientani img{
+    height: 9vh;
+    width: 10vw;
+    padding: 0 2vw;
+    animation: move 3s linear infinite;
+}
+@keyframes move{
+    0%{
+        transform: translateX(0);
+    }
+    100%{
+        transform: translateX(-100%);
+    }
+}
+
+/* -------------------------------------------- Cards ------------------------------------------------- */
+
+
+#cardsarea{
+    width: 100%;
+    min-height: 120vh;
+    text-align: center;
+    padding: 13vh 7vw;
+}
+
+#cardsarea h1{
+    font-size: 6vh;
+    padding-top: 2vh;
+}
+#cardsarea h2{
+    font-size: 3.1vh;
+    padding-top: 4vh;
+    padding-bottom: 2vh;
+    font-weight: 100;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #777777;
+}
+.cardcontainer{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.cards{
+    height: 40vh;
+    width: 19vw;
+    margin-top: 5vh;
+    /* background-color: yellow; */
+    border-radius: 10px;
+    position: relative;
+    transition: 0.5s;
+    display: flex;
+    justify-content: center;
+    box-shadow: 0 0 1px black;
+}
+.imgdiv img{
+    height: 100%;
+}
+
+.cards:hover{
+    height: 40vh;
+}
+.cardcontainer .cards .imgdiv{
+    position: absolute;
+    top: 20px;
+    height: 25vh;
+    width: 15vw;
+    /* background-color: #0c6dbe; */
+    transition: 0.5s;
+    overflow: hidden;
+    border-radius: 12px;
+}
+.cardcontainer .cards:hover .imgdiv{
+    top: -40px;
+    scale: 0.79;
+    box-shadow: 0 15px 45px black;
+}
+.cardcontainer .cards .contdiv{
+    position: absolute;
+    top: 31vh;
+    width: 100%;
+    padding: 0 30px;
+    text-align: center;
+    height: 17px;
+    overflow: hidden;
+}
+.cardcontainer .cards:hover .contdiv{
+    height: 20vh;
+    top: 20vh;
+    transition: 1s;
+}
+.contdiv p{
+    font-size: 10px;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-top: 1vh;
+}
+
+.contdiv h3{
+    font-size: 40px;
+}
+.aboutus{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 9vh 7vw;
+}
+.para{
+    font-weight: 100;
+    font-size: 3vh;
+    color: #3c3c3c9c;
+    width: 30vw;
+    /* background-color: yellow; */
+}
+.paraimg img{
+    width: 35vw;
+    
+}
+footer{
+    height: 50vh;
+    width: 100%;
+    overflow-x: hidden;
+    overflow-y: hidden;
+}
+.footer1{
+    height: 100%;
+    width: 100%;
+    position: relative;
+    right: 1vw;
+    top: 0vh;
+    background-color: #EBEBEB;
+    z-index: 1;
+    transform: rotate(4deg);
+}
+.footer2{
+    height: 100%;
+    width: 100vw;
+    position: relative;
+    bottom: 50vh;
+    background-color: #EBEBEB;
+    z-index: 1;
+    transform: rotate(-3deg);
+}
+.fotercontent{
+    position: relative;
+    top: 19vh;
+    z-index: 2;
+    padding: 0vh 7vw;
+}
+.fotercontent img{
+    height: 7vh;
+}
+.fotercontent h1{
+    font-size: 2.5vh;
+    font-weight: 500;
+    color: rgba(0, 0, 0, 0.715);
+    margin-top: 1vh;
+}
+.fotercontent p{
+    margin-top: 1.2vh;
+    font-size: 2vh;
+    font-weight: 100;
+    color: rgba(42, 41, 41, 0.694);
+}
+.fotercontent i{
+    font-size: 4vh;
+    margin-top: 1vh;
+    color: #0c6dbe;
+}
+.hidden{
+    opacity: 0;
+    filter: blur(5px);
+    transform: translateX(-100%);
+    transition: all 1s;
+}
+.show{
+    opacity: 1;
+    filter: blur(0);
+    transform: translateX(0);
+}
+
+.cards:nth-child(2){
+    transition-delay: 200ms;
+}
+.cards:nth-child(3){
+    transition-delay: 400ms;
+}
+.cards:nth-child(4){
+    transition-delay: 600ms;
+}
+.imgdiv1{
+    display: none;
+}
+.dropdown{
+    display: none;
+}
+/* ------------------------------------For Responsive ----------------------------------------------- */
+
+@media screen and (max-width: 480px) {
+    .firstnav{
+        padding: 0;
+        display: flex;
+        justify-content: space-between;
+        box-shadow: 0 0 10px black;
+    }
+    
+    
+    .emailnum{
+        display: none;
+    }
+    .navbuttons{
+        display: none;
+    }
+    .nav1link{
+        display: none;
+    }
+    .nav1link a{
+        font-size: 4vh;
+    }
+    #logo{
+        width: 10vh;
+        height: 70%;
+        position: static;
+    }
+    #menu{
+        display: block;
+        padding: 10px 10px;
+        font-size: 7vw;
+        color: #0c6dbe;
+        background-color: rgba(255, 255, 255, 0);
+        border: none;
+        border-radius: 2px;
+        margin: 0 10px 0 10px;
+    }
+    .secondnav{
+        display: none;
+    }
+    #menu2{
+        display: block;
+    }
+    #menu2 button{
+        padding: 5px 20px;
+        display: flex;
+        color: #0c6dbe;
+        border: none;
+        font-size: 9vw;
+        background-color: #ffffff00;    
+    }
+    .image_container{
+        height: 30vh;
+        width: 100%;
+        margin-top: 5vh;
+    }
+    .image_container video{
+        width: 100%;
+    }
+    #page1{
+        position: relative;
+        bottom: 10vh;
+    }
+    
+    
+    .clients{
+        position: relative;
+        bottom: 30vh;
+        width: 100%;
+    }
+    .clients h1{
+        padding: 3vh 0;
+    }
+    .clientani img{
+        height: 10vh;
+        width: 30vw;
+    }
+    #cardsarea{
+        position: relative;
+        bottom: 45vh;
+    }
+    .cardcontainer{
+        flex-direction: column;
+        gap: 20px;
+    }
+    .cards{
+        width: 80vw;
+        height: 40vh;
+    }
+    .aboutus{
+        display: flex;
+        flex-direction: column;
+        position: relative;
+        bottom: 50vh;
+    }
+    .para{
+        width: 100%;
+    }
+    .paraimg{
+        width: 100%;
+    }
+    .paraimg img{
+        width: 100%;
+        margin-top: 10vh;
+    }
+    footer{
+        position: relative;
+        bottom: 70vh;
+    }
+    .fotercontent{
+        position: relative;
+        top: 25vh;
+    }
+    #main{
+        height: 100vh;
+    }
+    .imgdiv{
+        display: none;
+    }
+    .imgdiv1{
+        display: block;
+    }
+    .imgdiv1 img{
+        height: 30vh;
+    }
+
+  }
